@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<widget id="com.racionaltec.phone" version="1.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:gap="http://phonegap.com/ns/1.0">
+    <name>RTec PHONE</name>
+    <description>
+        RTec
+    </description>
+    <author email="racionaltecapp@gmail.com" href="http://example.com/">
+      RTec
+    </author>
+  <content src="index.html"/>
+  <access origin="*"/>
+
+  
+  <preference name="swift-version" value="2" />
+
+  <preference name="phonegap-version" value="cli-5.2.0" />
+  <preference name="android-build-tool" value="gradle" />
+  <preference name="permissions" value="none" />
+  <preference name="orientation" value="default" />
+  <preference name="target-device" value="universal" />
+  <preference name="fullscreen" value="false" />
+  <preference name="webviewbounce" value="true" />
+  <preference name="prerendered-icon" value="true" />
+  <preference name="stay-in-webview" value="true" />
+  <preference name="detect-data-types" value="true" />
+  <preference name="exit-on-suspend" value="false" />
+  <preference name="disable-cursor" value="false" />
+  <preference name="android-installLocation" value="auto" />
+  <preference name="StatusBarOverlaysWebView" value="false"/>
+  <preference name="StatusBarStyle" value="#ffffff" />
+  <preference name="StatusBarBackgroundColor" value="#000000" />
+  <preference name="KeepRunning" value="false"/>
+  <preference name="EnableViewportScale" value="true"/> 
+  <preference name="DisallowOverscroll" value="true"/>
+  <preference name="android-minSdkVersion" value="14"/>
+  <preference name="android-installLocation" value="auto" />
+  <preference name="loadUrlTimeoutValue" value="700000" />  
+  
+
+
+  <!--
+  <gap:plugin spec="https://github.com/homerours/cordova-music-controls-plugin" />
+  <gap:plugin spec="https://github.com/shi11/RemoteControls" />
+  <gap:plugin spec="https://github.com/AubreyHewes/cordova-background-audio" />
+  -->
+
+   <gap:plugin spec="https://github.com/mradosta/cordova-plugin-streaming" />
+   <plugin spec="https://github.com/w3get/cordova-plugin-whitelist" />
+   <!-- PLUGIN w3 em dev retirar se o plugin nao estiver pronto <gap:plugin spec="https://github.com/viniciusstroher/plugin_phonegap_rtsp"/>
+  -->
+  
+   <gap:plugin spec="https://github.com/apache/cordova-plugin-media#2.4.x" />
+   <gap:plugin spec="https://github.com/apache/cordova-plugin-file" />
+   <gap:plugin spec="https://github.com/apache/cordova-plugin-file-transfer" />
+   <gap:plugin spec="https://github.com/phonegap-build/cordova-plugin-crosswalk-webview" />
+
+   <!--<gap:plugin spec="https://github.com/viniciusstroher/sip-cordova" />
+
+-->
+ 	<gap:plugin spec="https://github.com/alongubkin/phonertc" />
+   <feature name="File">
+        <param name="android-package" value="org.apache.cordova.file.FileUtils" />
+    </feature>
+    <feature name="FileTransfer">
+        <param name="android-package" value="org.apache.cordova.filetransfer.FileTransfer" />
+    </feature>
+    <feature name="File">
+        <param name="ios-package" value="CDVFile" />
+    </feature>
+    <feature name="FileTransfer">
+        <param name="ios-package" value="CDVFileTransfer" />
+    </feature>
+    
+    <preference name="AndroidPersistentFileLocation" value="Internal" />
+    <preference name="iosPersistentFileLocation" value="Library" />
+    
+ <icon gap:platform="android" gap:qualifier="ldpi" src="res/icon/android/icon-36-ldpi.png" />
+  <icon gap:platform="android" gap:qualifier="mdpi" src="res/icon/android/icon-48-mdpi.png" />
+  <icon gap:platform="android" gap:qualifier="hdpi" src="res/icon/android/icon-72-hdpi.png" />
+  <icon gap:platform="android" gap:qualifier="xhdpi" src="res/icon/android/icon-96-xhdpi.png" />
+  
+  <icon gap:platform="ios" height="29" src="res/icon/ios/icon-29.png" width="29" />
+  <icon gap:platform="ios" height="40" src="res/icon/ios/icon-40.png" width="40" />
+  <icon gap:platform="ios" height="57" src="res/icon/ios/icon-57.png" width="57" />
+  <icon gap:platform="ios" height="58" src="res/icon/ios/icon-58.png" width="58" />
+  <icon gap:platform="ios" height="60" src="res/icon/ios/icon-60.png" width="60" />
+  <icon gap:platform="ios" height="72" src="res/icon/ios/icon-72.png" width="72" />
+  <icon gap:platform="ios" height="76" src="res/icon/ios/icon-76.png" width="76" />
+  <icon gap:platform="ios" height="80" src="res/icon/ios/icon-80.png" width="80" />
+  <icon gap:platform="ios" height="87" src="res/icon/ios/icon-87.png" width="87" />
+  <icon gap:platform="ios" height="114" src="res/icon/ios/icon-114.png" width="114" />
+  <icon gap:platform="ios" height="120" src="res/icon/ios/icon-120.png" width="120" />
+  <icon gap:platform="ios" height="144" src="res/icon/ios/icon-144.png" width="144" />
+  <icon gap:platform="ios" height="152" src="res/icon/ios/icon-152.png" width="152" />
+  <icon gap:platform="ios" height="167" src="res/icon/ios/icon-167.png" width="167" />
+  <icon gap:platform="ios" height="180" src="res/icon/ios/icon-180.png" width="180" />
+  
+  
+  <gap:splash src="res/screen/android/xxxhdpi.png" />
+  
+  <gap:splash src="res/screen/android/ldpi.png" gap:platform="android" gap:qualifier="ldpi" />
+  <gap:splash src="res/screen/android/mdpi.png" gap:platform="android" gap:qualifier="mdpi" />
+  <gap:splash src="res/screen/android/hdpi.png" gap:platform="android" gap:qualifier="hdpi" />
+  <gap:splash src="res/screen/android/xhdpi.png" gap:platform="android" gap:qualifier="xhdpi" />
+  <gap:splash src="res/screen/android/xxhdpi.png" gap:platform="android" gap:qualifier="xxhdpi" />
+  <gap:splash src="res/screen/android/xxxhdpi.png" gap:platform="android" gap:qualifier="xxxhdpi" />
+  
+  
+  <splash src="res/screen/ios/320x480.png" platform="ios" width="320" height="480" />
+  <splash src="res/screen/ios/640x960.png" platform="ios" width="640" height="960" />
+  <splash src="res/screen/ios/640x1136.png" platform="ios" width="640" height="1136" />
+  <splash src="res/screen/ios/768x1024.png" platform="ios" width="768" height="1024" />
+  <splash src="res/screen/ios/750x1334.png" platform="ios" width="750" height="1334" />
+  <splash src="res/screen/ios/1024x768.png" platform="ios" width="1024" height="768" />
+  <splash src="res/screen/ios/1242x2208.png" platform="ios" width="1242" height="2208" />
+  <splash src="res/screen/ios/1536x2048.png" platform="ios" width="1536" height="2048" />
+  <splash src="res/screen/ios/2208x1242.png" platform="ios" width="2208" height="1242" />
+
+
+
+
+
+
+
+
+
+   
+   <gap:plugin spec="https://github.com/w3get/cordova-plugin-splashscreen" />
+ 
+  <!-- plugin para ios usar wkwebview -->
+   <gap:plugin spec="https://github.com/apache/cordova-plugin-wkwebview-engine" />
+   
+   <gap:plugin spec="https://github.com/w3get/PushPlugin#v2.5.0-pgb" />
+   
+   
+   <feature name="CDVWKWebViewEngine">
+      <param name="ios-package" value="CDVWKWebViewEngine" />
+   </feature>
+
+    <preference name="CordovaWebViewEngine" value="CDVWKWebViewEngine" />
+
+    <access origin="*" browserOnly="true" />
+
+    <allow-navigation href="*://*.w3host.no-ip.org/*"/>
+    <allow-navigation href="*://*.googleapis.com/*"/>
+    <allow-navigation href="https://192.168.0.250/*" />
+    <allow-navigation href="*://192.168.0.250/*"/>
+    <allow-intent href="*://*.192.168.0.250/*" />
+
+    <allow-intent href="rtsp://*/*" />
+    
+    <allow-intent href="geo:*" />
+
+     <allow-intent href="rtsp://*/*" />
+  
+</widget>
